@@ -1,7 +1,7 @@
 class Solution {
     public int minimumBoxes(int[] apple, int[] capacity) {
         int sum = 0;
-        Arrays.sort(capacity);
+        Arrays.sort(capacity); // we can find the less boxes when iterating from rigth to left so the minimum bax can be found
         int current = 0;
         int boxes = 0;
         for(int i : apple){
@@ -15,6 +15,5 @@ class Solution {
             }
         }
         return boxes;
-
     }
 }
