@@ -19,13 +19,13 @@ class Solution {
         int elementSum = elementSum(nums);
         int digitSum = 0;
         for(int i=0;i<nums.length;i++){
-            String s = String.valueOf(nums[i]);
-            if(s.length() > 1){
+            // String s = String.valueOf(nums[i]);
+            // if(s.length() > 1){
                 digitSum += digitSum(nums[i]);
-            }
-            else{
-                digitSum+=nums[i];
-            } 
+            // }
+            // else{
+            //     digitSum+=nums[i];
+            // } 
         }
         return Math.abs(elementSum - digitSum);
     }
