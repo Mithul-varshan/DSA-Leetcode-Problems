@@ -33,8 +33,9 @@ class Solution {
                 }
                 left++;
             }
-            count+= right-left +1;
-
+            if(map.size() <= k) {
+                count+= right-left +1;
+            }
         }
         return count;
     }
