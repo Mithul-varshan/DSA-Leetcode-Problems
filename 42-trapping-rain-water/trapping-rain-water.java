@@ -41,5 +41,7 @@ class Solution {
             res += Math.min(leftMax[i], rightMax[i]) - height[i];
         }
         return res;
+
+        //next should be done in two pointers
     }
 }
