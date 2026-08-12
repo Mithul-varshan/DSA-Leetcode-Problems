@@ -13,12 +13,13 @@ class Solution {
         while(!st.isEmpty() && k-->0){
             st.pop();
         }
-        System.out.print(st.size());
+        // System.out.print(st.size());
         String s ="";
+        StringBuilder sb = new StringBuilder();
         while(st.size() > 0){
-            s+=st.pop();
+            sb.append(st.pop());
         }
-        String rev = new StringBuilder(s).reverse().toString();
+        String rev = sb.reverse().toString();
         int c=0;
         for(int i=0; i<rev.length();i++){
             char ch = rev.charAt(i);
