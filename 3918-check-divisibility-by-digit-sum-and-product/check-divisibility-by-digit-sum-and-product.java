@@ -9,8 +9,6 @@ class Solution {
             prod*=last;
             n=n/10;
         }
-        if(temp%(sum+prod) == 0) return true;
-        return false;
-        // return n%(sum+prod) == 0 ? true : false;
+        return temp%(sum+prod) == 0 ? true : false;
     }
 }
