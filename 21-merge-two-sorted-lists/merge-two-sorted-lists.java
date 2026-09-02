@@ -36,19 +36,23 @@ class Solution {
         ListNode dummy = new ListNode(0);
         ListNode current = dummy;
         while(p1 != null && p2 != null){
-            if(p1.val <= p2.val){
+            if(p1.val <= p2.val) {
                 current.next = p1;
                 p1 = p1.next;
                 current = current.next;
             }
-            else if(p2.val <= p1.val) {
+            else{
                 current.next = p2;
                 p2 = p2.next;
                 current = current.next;
             }
         }
-        if(p1 != null) current.next = p1;
-        else current.next = p2;
+        if(p1 != null){
+            current.next = p1;
+        }
+        else{
+            current.next = p2;
+        }
         return dummy.next;
     }
 }
