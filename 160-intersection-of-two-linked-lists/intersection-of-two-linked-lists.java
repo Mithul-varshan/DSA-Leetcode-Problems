@@ -16,26 +16,21 @@ public class Solution {
         // while(current != null){
         //     ListNode temp = current2;
         //     while(temp != null){
-        //         if(current == tzemp) return current;
+        //         if(current == temp) return current;
         //         temp=temp.next;
         //     }
         //     current=current.next;
         // }
         // return null;
 
-        ListNode current = headA;
-        ListNode current2 = headB;
-        while(current != null || current2 != null){
-            if(current == null){
-                current = headA;
-            }
-            if(current2 == null){
-                current2 = headB;
-            }
-            if(current == current2) return current;
-            current = current.next;
-            current2 = current2.next;
-
+        ListNode curr = headA;
+        ListNode curr2 = headB;
+        while(curr != null || curr2 != null) {
+            if(curr == null) curr = headA;
+            if(curr2 == null) curr2 = headB;
+            if(curr2 == curr) return curr;
+            curr = curr.next;
+            curr2 = curr2.next;
         }
         return null;
     }
