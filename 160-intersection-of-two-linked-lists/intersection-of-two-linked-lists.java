@@ -34,21 +34,13 @@ public class Solution {
         // }
         // return null;
         ListNode current = headA;
-ListNode current2 = headB;
-
-while (current != current2) {
-
-    if (current == null)
-        current = headB;
-    else
-        current = current.next;
-
-    if (current2 == null)
-        current2 = headA;
-    else
-        current2 = current2.next;
-}
-
-return current;
+        ListNode current2 = headB;
+        while (current != current2) {
+            if (current == null) current = headB;
+            else current = current.next;
+            if (current2 == null) current2 = headA;
+            else current2 = current2.next;
+        }
+        return current;
     }
 }
