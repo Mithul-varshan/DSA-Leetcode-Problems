@@ -21,5 +21,21 @@ class Solution {
         }
         if (n < 0) ans = (double)1.0 / (double) ans;
         return ans;
+
+        // long exp = n;
+        // boolean negative = exp < 0;
+
+        // if (negative) {
+        //     exp = -exp;
+        // }
+
+        // double result = 1.0;
+
+        // for (long i = 0; i < exp; i++) {
+        //     result *= x;
+        // }
+
+        // return negative ? 1.0 / result : result;
+
     }
 }
